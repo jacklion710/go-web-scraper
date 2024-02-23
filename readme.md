@@ -15,7 +15,6 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 - Go (version 1.15 or later is recommended)
-- Git
 
 ### Installing
 
