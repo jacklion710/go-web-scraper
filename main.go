@@ -11,6 +11,9 @@ func main() {
 		colly.AllowedDomains("docs.cycling74.com"),
     )
 
+	// Set User-Agent
+	c.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+
     // On every a element which has href attribute call callback
     c.OnHTML("a[href]", func(e *colly.HTMLElement) {
         link := e.Attr("href")
